@@ -6,5 +6,6 @@ model User {
   role      Role     @default(LEARNER)
   createdAt DateTime @default(now())
 
+  tutorProfile    TutorProfile?
 
 }
