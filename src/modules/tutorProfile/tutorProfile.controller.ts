@@ -12,7 +12,7 @@ const getAllTutors = async (req: Request, res: Response) => {
 
 const getSingleTutor = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await TutorProfileService.getSingleTutor(id);
+  const result = await TutorProfileService.getSingleTutor(id as string);
 
   res.json({
     success: true,
